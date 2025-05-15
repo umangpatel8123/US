@@ -1,0 +1,61 @@
+.bargain-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bargain-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.3);
+  }
+  
+  .bargain-options {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .bargain-btn {
+    font-size: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .bargain-btn.accept {
+    border: 2px solid #4caf50;
+  }
+  
+  .bargain-btn.decline {
+    border: 2px solid #f44336;
+  }
+  
+  .bargain-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* <<< THIS is the key! */
+    z-index: -1;
+  }
+  
