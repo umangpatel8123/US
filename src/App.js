@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Landing from './components/Landing';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import FeelingsPage from './components/FeelingsPage'; // Import the FeelingsPage component
 import Bargain from './components/Bargain'; // Import the Bargain component
 
